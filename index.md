@@ -1,3 +1,17 @@
+# ok lets add some content
+not sure what you want to see here
+<p>Does regular html even work?</p>
+
+<ul>
+<li>list 1</li>
+<li>list 2</li>
+</ul>
+
+<!-- html markup -->
+
+- one
+- two
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/huntingtown/run/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
