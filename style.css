@@ -1,4 +1,4 @@
-body{background:black;color:darkseagreen;font-family:monospace;}
+body{background:black;color:darkseagreen;font-family:monospace;max-width:100vw;}
 p{font-size:1em;} p::before{content:'>';}
 a{color:lightgreen; text-decoration:none;}
 h2::before{content:':: '}h2::after{content:' ::'}
