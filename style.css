@@ -1,6 +1,7 @@
-body{background:black;color:lightgreen;font-family:monospace;}
-p::before{content:'>';}
-a::before{content:'[ ';}a::after{content:' ]';}
+body{background:black;color:darkseagreen;font-family:monospace;}
+p{font-size:1em;} p::before{content:'>';}
+a{color:lightgreen;} a::before{content:'[ ';}a::after{content:' ]';}
 h2::before{content:':: '}h2::after{content:' ::'}
 h2{font-size:1em;font-weight:100;letter-spacing:2px;text-transform:uppercase;}
+ul,ol{font-size:1em;}
 li{list-style-type:hangul-consonant;}
