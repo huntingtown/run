@@ -5,8 +5,15 @@ h2::before{content:':: '}h2::after{content:' ::'}
 h2{font-size:12px;font-weight:100;letter-spacing:2px;text-transform:uppercase;}
 ul,ol{font-size:12px;}
 li{list-style-type:hangul-consonant;}
-hr {border: 0px;border-top: 1px solid darkseagreen;}
-img {border: 1px dashed darkseagreen;max-width:800px;}
+hr {border: 0px;border-top: 1px dashed darkseagreen;}
+img {
+    border: 1px dashed darkseagreen;
+    max-width: 600px;
+    float: right;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px;
+}
 .load {overflow: hidden;animation: load 2s steps(25, end);}
 
 @keyframes load { 
