@@ -1,3 +1,7 @@
+<head>
+<link rel="stylesheet" type="text/css" href="style.css"
+</head>
+
 # ok lets add some content
 not sure what you want to see here
 <p>Does regular html even work?</p>
