@@ -7,3 +7,8 @@ ul,ol{font-size:12px;}
 li{list-style-type:hangul-consonant;}
 hr {border: 0px;border-top: 1px solid darkseagreen;}
 img {max-width: 100%;border: 1px dashed darkseagreen;}
+
+.load {overflow: hidden;animation: load 1.5s steps(30, end);}
+
+@keyframes load { from { height: 0 } to { height: 100vh } }
+
