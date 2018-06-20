@@ -1,5 +1,6 @@
 body{background:black;color:lightgreen;font-family:monospace;}
 p::before{content:'>';}
 a::before{content:'[ ';}a::after{content:' ]';}
-h2::before{content:'<< '}h2::after{content:' >>'}
+h2::before{content:':: '}h2::after{content:' ::'}
+h2{font-size:1em;font-weight:100;letter-spacing:2px;text-transform:uppercase;}
 li{list-style-type:hangul-consonant;}
