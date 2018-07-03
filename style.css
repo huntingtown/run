@@ -1,23 +1,236 @@
-body{background:black;color:darkseagreen;font-family:monospace;max-width:100vw;}
-p{font-size:12px;max-width:600px;text-align:justify;} p::before{content:'>';color:lightgreen;}
+@font-face {
+  font-family: Spaceport;
+  src: url('Spaceport_2006.otf') format("opentype");
+}
+body{background:black;color:#fff;font-family:Share Tech Mono;max-width:100vw;-webkit-font-smoothing: antialiased;font-size: 12px;}
+
+p{font-size:12px;max-width:600px;text-align:justify;} p::before{content:'>';color:#fff;}
 a{color:lightgreen; text-decoration:none;}
-h2::before{content:':: '}h2::after{content:' ::'}
-h2{font-size:12px;font-weight:100;letter-spacing:2px;text-transform:uppercase;}
-ul,ol{font-size:12px;}
-li{list-style-type:hangul-consonant;}
-hr {border: 0px;border-top: 1px dashed darkseagreen;}
-img {
-    border: 1px dashed darkseagreen;
-    max-width: 600px;
-    float: right;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5px;
+
+h1{
+  font-size:3em;
+  font-weight:100;
+  letter-spacing:2px;
+  margin:0px; padding:0px;
+  text-transform:uppercase;
+  font-weight: bold;
 }
+h2{
+  font-size:2em;
+  font-weight:100;
+  letter-spacing:2px;
+  margin:10px 0px;
+  text-transform:uppercase;
+  font-family: Spaceport;
+}
+h3{
+  font-size: 2em;
+  margin: 0px;
+  font-family: Spaceport;
+}
+h5 {
+    text-orientation: upright;
+    font-size: 4em;
+    margin: 0px;
+    padding: 5px 0px;
+    font-weight: 100;
+}
+.red{color:red;}
+ul,ol{font-size:1em;margin:0px;}
+li{list-style-type:none;}
+hr {
+    border: 0px;
+    border-top: 1px solid #808080;
+    width: 90%;
+    overflow: visible;
+    margin: 15px auto 12px;
+}
+  hr::before {
+      content: " ";
+      display: block;
+      width: 4%;
+      position: relative;
+      left: -5%;
+      overflow: visible;
+      top: -3px;
+      background: repeating-linear-gradient( to right, #808080, #808080 1px, #000 1px, #000 2px );
+      height: 5px;
+  }
+  hr::after {
+      content: " ";
+      display: block;
+      width: 4%;
+      position: relative;
+      float:right;
+      right: -5%;
+      overflow: visible;
+      top: -8px;
+      background: repeating-linear-gradient( to right, #808080, #808080 1px, #000 1px, #000 2px );
+      height: 5px;
+  }
+  img {box-sizing: border-box;width: 100%;}
+
+.fl{float:left;}
 .load {overflow: hidden;animation: load 2s steps(25, end);}
+@keyframes load {
+  from { height: 0px }
+  to { height: 100vh }
+}
+.clear{clear:both;}
 
-@keyframes load { 
-  from { height: 0px } 
-  to { height: 100vh } 
+.topleft      {position:fixed; top:10px;    left:10px;}
+.topright     {position:fixed; top:10px;    right:10px;}
+.bottomleft   {position:fixed; bottom:10px; left:10px;}
+.bottomright  {position:fixed; bottom:10px; right:10px;}
+
+.g{color:rgba(255,255,255,0.5);}
+
+.cont{padding:30px 20px;}
+
+.col1{float:left;display:block;box-sizing: border-box;padding:0px 10px;width:25%; }
+.col2{float:left;display:block;box-sizing: border-box;width:5%; }
+.col3{float:right;display:block;box-sizing: border-box;padding:0px 10px;width:70%; }
+
+.col2{writing-mode: vertical-rl;max-width: 50px;height:100%;}
+
+.half{float:left;width:50%;box-sizing: border-box;}
+.half.first{padding-right: 10px;}.half.last{padding-left: 10px;}
+
+.third{float:left;box-sizing:border-box;padding:0px 5px;width:33.333%;}
+.third.first{padding: 0px 5px 0px 0px;}.third.last{padding: 0px 0px 0px 5px;}
+.third.two{width:66.666%;}
+
+.fourth{float:left;box-sizing:border-box;padding:0px 10px;width:25%;}
+.fourth.first{padding: 0px 10px 0px 0px;}.fourth.last{padding: 0px 0px 0px 10px;}
+
+.fifth{float:left;box-sizing:border-box;padding:0px 10px;width:20%;}
+.fifth.first{padding: 0px 10px 0px 0px;}.fifth.last{padding: 0px 0px 0px 10px;}
+
+.wblock {
+    background: #fff;
+    color: #000;
+    padding: 5px 0px 0px 10px;
+    box-sizing: border-box;
+    font-size: 2em;
+    margin-bottom: 5px;
+    height: 35px;
+    text-transform: uppercase;
+}
+  .wblock::after {
+    content: ' ';
+    display: block;
+    background: repeating-linear-gradient( 135deg, #fff, #fff 15px, #000 15px, #000 30px);
+    height: 15px;
+    width: 15px;
+    position: relative;
+    float: right;
+    bottom: -15px;
+  }
+.sm{font-size: 0.8em;}
+.stripe {
+    background: repeating-linear-gradient( -45deg, #fff, #fff 10px, #000 10px, #000 30px );
+    padding: 20px;
+    animation-name: stripe;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    background: transparent;
+    background-image: repeating-linear-gradient( -45deg, #fff, #fff 10px, #000 10px, #000 45px ),repeating-linear-gradient( -45deg, #fff, #fff 10px, #000 10px, #000 30px );
+    background-size: 200% 200%;
+    background-position: 0% 0%;
+    margin:0px;
+    box-sizing: border-box;
+}
+@keyframes stripe {
+    0%{background-position:  0% 0%;}
+   100%{background-position:  92.4% 100%;}
+
+}
+.smwb{font-size: 1.5em; background:#fff; padding:3px 5px; color:#000;margin-right:10px;}
+
+.bstat{border-top:1px solid #555;}
+.bstat .title{border-left: 1px solid #555; padding: 2px 5px;}
+.bstat h3{padding: 3px 5px;}
+
+.col2 .smwb {
+    font-size: 1.2em;
+    background: #fff;
+    color: #000;
+    margin: 0px 0px 0px;
+    width: 100%;
+    box-sizing: border-box;
+    writing-mode: horizontal-tb;
+    text-align: center;
+}
+.pport{
+    height: auto;
+    border: 1px solid #555;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px 3px;
 }
 
+.stats li {
+    border-bottom: 1px solid #333;
+    padding-bottom: 2px;
+    margin-bottom: 2px;
+}
+.stats li:first-child{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wanted_level i {
+    font-size: 1.75em;
+    letter-spacing: -5px;
+    margin: 3px 0px;
+}
+
+.tt .ttt {
+    visibility: hidden;
+    position: absolute;
+    background: #000;
+    border: 1px solid #555;
+    width: auto;
+    max-width: 200px;
+    padding: 3px 5px;
+    text-align: left;
+    font-size: 10px;
+}
+
+.tt:hover .ttt{
+  visibility: visible;
+}
+
+.wallet{
+    writing-mode: horizontal-tb;
+    text-align: center;
+    float: left;
+    width: 100%;
+    border: 1px solid #555;
+    box-sizing: border-box;
+    padding: 5px 0px;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 1000px) {
+.col12cont{width:30%; float:left;}
+.col1{width:100%;}
+.col2{
+  width:100%;
+  max-width: 100%;
+  writing-mode: horizontal-tb ;
+  height:auto;
+  padding:0px 10px
+}
+
+@media only screen and (max-width: 750px) {
+  .col12cont{width:100%}
+  .col1,.col2,.col3{width:100%;padding: 0px;}
+}
+
+@media only screen and (max-width: 650px) {
+  .half{width:100%;}
+  .half.first, .half.last{padding:0px;}
+}
