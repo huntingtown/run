@@ -209,25 +209,108 @@ hr {
     width: 100%;
     border: 1px solid #555;
     box-sizing: border-box;
-    padding: 5px 0px;
+    padding: 5px;
     margin-bottom: 5px;
     font-size: 1.5em;
+    word-break: break-all;
 }
 
-@media only screen and (max-width: 1000px) {
-.col12cont{width:30%; float:left;}
-.col1{width:100%;}
-.col2{
+#passport i{writing-mode: lr;text-align: center;width: 100%;margin: -1px 0px 5px;padding: 3px;border: 1px solid #555;box-sizing: border-box;}
+
+.prof{writing-mode: horizontal-tb;text-align: center;width: 100%;}
+
+.a-t {cursor: pointer;}
+.a-c {display: none;padding-bottom:10px;}
+.a-c::after {
+    content: ".";
+    height: 10px;
+    position: relative;
+    bottom: 0px;
+    color: #000;
+}
+.a-c.default {display: block;}
+
+.credit{
   width:100%;
-  max-width: 100%;
-  writing-mode: horizontal-tb ;
-  height:auto;
-  padding:0px 10px
+  box-sizing: border-box;
+  padding: 0px 4px 15px;
+}
+
+/* MEDIA QUERY -------------------------------------------------------------- */
+
+@media only screen and (max-width: 1000px) {
+  .col12cont{width:30%; float:left;}
+  .col1{width:100%;}
+  .col2{
+    width:100%;
+    max-width: 100%;
+    writing-mode: horizontal-tb ;
+    height:auto;
+    padding:0px 10px
+  }
+  #wallet .smwb {
+      width: 10%;
+      height: 32px;
+      padding: 8px;
+  }
+  #wallet .wallet{
+    width: 90%;
+    height: 32px;
+    text-align: left;
+  }
+
+  .credit {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 0px 4px 15px;
+  }
+  #passport{width:100%;}
+  #passport .smwb {
+    width: 10%;
+    height: 32px;
+    padding: 4px;
+    height:70px;
+    box-sizing: border-box;
+    writing-mode: tb;
+  }
+  #passport .pport {
+    width:75%;
+    height:70px;
+    box-sizing: border-box;
+  }
+  #passport i{
+    width:15%;
+    height:70px;
+    box-sizing: border-box;
+    margin: 0px;
+    border-left: 0px;
+    padding: 22px 0px;
+  }
+  h5.fl {
+      width: 20%;
+      line-height: 1em!important;
+      padding: 0px!important;
+      margin-top: -3px;
+  }
+  .prof {
+      display:none;
+      writing-mode: unset;
+      text-align: center;
+      width: 10%;
+      padding: 5px 0px;
+      height: 40px;
+  }
 }
 
 @media only screen and (max-width: 750px) {
   .col12cont{width:100%}
   .col1,.col2,.col3{width:100%;padding: 0px;}
+  h5.fl {
+      width: 10%;
+  }
+  .prof {
+      display:block
+  }
 }
 
 @media only screen and (max-width: 650px) {
