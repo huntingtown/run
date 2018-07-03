@@ -27,6 +27,7 @@ h3{
   font-size: 2em;
   margin: 0px;
   font-family: Spaceport;
+  font-weight: 100;
 }
 h5 {
     text-orientation: upright;
@@ -179,6 +180,9 @@ hr {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.stats .fourth.first{width:40%;}
+.stats .fourth{width:20%;}
 
 .wanted_level i {
     font-size: 1.75em;
