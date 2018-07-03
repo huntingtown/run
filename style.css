@@ -235,6 +235,10 @@ hr {
   box-sizing: border-box;
   padding: 0px 4px 15px;
 }
+.defblock{
+  padding:5px;
+  text-align: center
+}
 
 /* MEDIA QUERY -------------------------------------------------------------- */
 
