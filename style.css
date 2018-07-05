@@ -30,12 +30,25 @@ h3{
   font-weight: 100;
 }
 h5 {
-    text-orientation: upright;
-    font-size: 4em;
-    margin: 0px;
-    padding: 5px 0px;
-    font-weight: 100;
+  text-orientation: upright;
+  font-size: 4em;
+  margin: 0px;
+  padding: 5px 0px;
+  font-weight: 100;
 }
+h6{
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin:0px 0px 2px;
+  font-size: 1em;
+}
+  h6::before{content:':: ';}
+  h6 span.w {
+      padding: 0px 4px;
+      text-align: right;
+      float: right;
+  }
 .red{color:red;}
 ul,ol{font-size:1em;margin:0px;}
 li{list-style-type:none;}
@@ -93,10 +106,10 @@ hr {
 .col3{float:right;display:block;box-sizing: border-box;padding:0px 10px;width:70%; }
 .col4{float:right;display:block;box-sizing: border-box;padding:0px 10px;width:70%; }
 
-.col2{writing-mode: vertical-rl;max-width: 50px;height:100%;}
+.col2{writing-mode: vertical-rl;max-width: 50px;height:850px;}
 
 .half{float:left;width:50%;box-sizing: border-box;}
-.half.first{padding-right: 10px;}.half.last{padding-left: 10px;}
+.half:nth-child(odd){padding-right: 10px;}.half:nth-child(even){padding-left: 10px;}
 
 .third{float:left;box-sizing:border-box;padding:0px 5px;width:33.333%;}
 .third.first{padding: 0px 5px 0px 0px;}.third.last{padding: 0px 0px 0px 5px;}
@@ -117,16 +130,16 @@ hr {
     margin-bottom: 5px;
     height: 35px;
     text-transform: uppercase;
+    position: relative;
 }
   .wblock::after {
-    content: ' ';
-    display: block;
-    background: repeating-linear-gradient( 135deg, #fff, #fff 15px, #000 15px, #000 30px);
-    height: 15px;
-    width: 15px;
-    position: relative;
-    float: right;
-    bottom: -15px;
+      content: ' ';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border-top: 15px solid white;
+      border-right: 15px solid black;
+      width: 0;
   }
 .sm{font-size: 0.8em;}
 .stripe {
@@ -278,13 +291,13 @@ hr {
 
 ul.ram {margin: 0px;padding: 0px;}
 .ram li {
-    border: 1px solid #000;
+    border-right: 2px solid #000;
     width: 10%;
-    height: 5px;
+    height: 7px;
     float: left;
     box-sizing: border-box;
     margin: 2px 0px;
-    background: #333;
+    background: #555;
 }
   .ram li.w {background: #fff;}
 
@@ -305,9 +318,15 @@ li .mod {
     border: 1px solid #fff;
     padding: 10px;
     border-left: 4px dashed;
+    font-weight: bold;
+    font-family: sans-serif;
 }
-ul.prog{padding:0px}
-ul.prog li{border-bottom:1px solid #555; padding-bottom:3px; box-sizing: border-box;margin:3px 0px;}
+.mods span.a-c {
+    font-weight: 100;
+    font-family: Share Tech mono;
+    font-size: 0.9em;
+}
+
 
 .spin{
   animation-name: spin;
@@ -315,13 +334,42 @@ ul.prog li{border-bottom:1px solid #555; padding-bottom:3px; box-sizing: border-
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+  @keyframes spin {
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+  }
 
-@keyframes spin {
-  from{transform: rotate(0deg);}
-  to{transform: rotate(360deg);}
-}
+ul.prog{padding:0px}
+  ul.prog li {
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 3px 0%;
+    width: 100%;
+    float: left;
+    border-bottom: 4px double #555;
+    border-left: 4px double #555;
+    padding-left: 3px;
+    border-bottom-left-radius: 10px;
+  }
+    ul.prog li span.a-c::after{content:"";}
+.subroutines{margin: 3px 0px;} .subroutines .w{margin-bottom:3px; text-transform: uppercase;padding:0px 3px;}
+  .subroutines ul {padding: 0px;}
+    .subroutines ul li {margin: 2px 0px;border: 0px;float:left;}
+      .subroutines ul li:nth-child(odd) {width: 10%;text-align: center;}
+      .subroutines ul li:nth-child(even) {width: 90%;}
 
-/* MEDIA QUERY -------------------------------------------------------------- */
+ul.lifepath{padding:0px;}
+  ul.lifepath li{float:left; border-bottom:1px solid #333;margin-bottom:2px;padding-bottom:2px;}
+    ul.lifepath li:nth-child(odd){width:10%;margin-right:5%;}
+    ul.lifepath li:nth-child(even){width:85%;}
+
+ul.tech{padding:0px;}
+  ul.tech li{float:left; border-bottom:1px solid #333;margin-bottom:2px;padding-bottom:2px;}
+    ul.tech li:nth-child(even){width:10%;margin-left:5%;text-align: center;}
+    ul.tech li:nth-child(odd){width:85%;}
+/* =============================================================================
+MEDIA QUERY --------------------------------------------------------------------
+============================================================================= */
 
 @media only screen and (min-width: 1600px) {
 
