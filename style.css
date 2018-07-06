@@ -198,6 +198,9 @@ hr {
 .stats .fourth.first{width:40%;}
 .stats .fourth{width:20%;}
 
+.stats .fifth.first{width:40%;}
+.stats .fifth {width: 15%;padding: 0px 5px;}
+
 .wanted_level i {
     font-size: 1.75em;
     letter-spacing: -5px;
@@ -367,6 +370,73 @@ ul.tech{padding:0px;}
   ul.tech li{float:left; border-bottom:1px solid #333;margin-bottom:2px;padding-bottom:2px;}
     ul.tech li:nth-child(even){width:10%;margin-left:5%;text-align: center;}
     ul.tech li:nth-child(odd){width:85%;}
+
+.mods .desc{
+  margin-top: 5px;
+  border-top: 1px dashed #555;
+  padding-top: 5px;
+}
+
+.mods .a-c::after{content:"";}
+
+.armour{border:1px solid #555;border-bottom:0px;margin-top:3px;}
+.armour .sm{padding:3px; border-bottom:1px solid #555;}
+.armour i, .augment i{vertical-align: middle;font-size: 1.5em;line-height: 5px;}.augment i{padding-right:5px}
+.armour .a-c::after{content:"";}
+
+.crime .third.first{width:20%;overflow:hidden;}
+.crime .third{width:60%;}
+.crime .third.last{width:20%;}
+
+.augment{margin-bottom:10px;}
+.augment .smwb{
+  text-transform: uppercase;
+  font-size: 1em;
+  position: relative;
+  margin:0px;
+  width: fit-content;
+  padding-right: 50px;
+  border-left: 10px double;
+}
+.augment .smwb::after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-top: 20px solid black;
+    border-left: 20px solid white;
+    width: 0;
+}
+.augment .data {
+    border-left: 4px solid #fff;
+    margin-left: 3px;
+    padding-left: 3px;
+}
+.augment .data .info{border-top: 1px solid #fff;padding: 5px 0px;}
+.augment .data .w.bonus{text-transform: uppercase;padding: 0px 3px;border-bottom: 1px solid #000;}
+.augment span.a-c{padding:0px;}.augment span.a-c::after{content:"";}
+
+ul.clip {
+    border: 1px solid;
+    margin: 10px;
+    padding: 1px;
+    width: 12px;
+    border-top: 0px;
+    border-bottom: 4px solid;
+}
+  ul.clip.double {width: 24px;}
+    li.bullet {
+      width: 10px;
+      border: 2px solid;
+      margin: 1px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-right: 3px double;
+      box-sizing: border-box;
+      float: left;
+    }
+
+
 /* =============================================================================
 MEDIA QUERY --------------------------------------------------------------------
 ============================================================================= */
@@ -403,7 +473,7 @@ MEDIA QUERY --------------------------------------------------------------------
   }
 
   .credit {
-    width: 80%;
+    width: 85%;
     box-sizing: border-box;
     padding: 0px 4px 15px;
   }
@@ -430,7 +500,7 @@ MEDIA QUERY --------------------------------------------------------------------
     padding: 22px 0px;
   }
   h5.fl {
-      width: 20%;
+      width: 15%;
       line-height: 1em!important;
       padding: 0px!important;
       margin-top: -3px;
@@ -439,7 +509,7 @@ MEDIA QUERY --------------------------------------------------------------------
       display:none;
       writing-mode: unset;
       text-align: center;
-      width: 10%;
+      width: 15%;
       padding: 5px 0px;
       height: 40px;
   }
@@ -448,15 +518,19 @@ MEDIA QUERY --------------------------------------------------------------------
 @media only screen and (max-width: 750px) {
   .col12cont{width:100%}
   .col1,.col2,.col3,.col4{width:100%;padding: 0px;}
-  h5.fl {
-      width: 10%;
-  }
-  .prof {
-      display:block
-  }
+  h5.fl {width: 15%;text-align: center;}
+  .prof {display:block}
+  .crime .third.first{width:30%;}
+  .crime .third{width:45%;}
+  .crime .third.last{width:25%;}
+  .credit {width: 70%;}
 }
 
 @media only screen and (max-width: 650px) {
   .half{width:100%;}
   .half.first, .half.last{padding:0px;}
+  .half.defblock, .half.nmob{width:50%;}
+  .topright,.topleft,.bottomleft,.bottomright{display:none;}
+  .cont{padding:10px;}
+  .a-c {display: block;} .a-c.default {display: none;}
 }
