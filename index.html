@@ -237,6 +237,10 @@ CRIMINAL RECORD:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
       </div><!-- end col1 -->
 
+<!--============================================================================
+ACCOUNT:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+=============================================================================-->
+
       <div class="col2">
           <span class="a-t">
             <div id="wallet">
@@ -274,6 +278,10 @@ CRIMINAL RECORD:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
       </div>
     </div><!-- end col2 -->
 
+
+<!--============================================================================
+FRAME:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+=============================================================================-->
     <div class="col3">
       <span class="a-t">
         <div class="half first">
@@ -314,19 +322,19 @@ CRIMINAL RECORD:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
         <br>
         <div class="bstat">
           <div class="fourth first">
-            <div class="title">STRENGTH</div>
+            <div class="title"><div class="sm g">STRENGTH</div><span style="font-size: 1.2em;">STR</span></div>
             <h3>5</h3>
           </div>
           <div class="fourth">
-            <div class="title">REFLEX</div>
+            <div class="title"><div class="sm g">REFLEX</div><span style="font-size: 1.2em;">REF</span></div>
             <h3>5</h3>
           </div>
           <div class="fourth">
-            <div class="title">ENDURANCE</div>
+            <div class="title"><div class="sm g">ENDURANCE</div><span style="font-size: 1.2em;">END</span></div>
             <h3>5</h3>
           </div>
           <div class="fourth last">
-            <div class="title">ATTRACT</div>
+            <div class="title"><div class="sm g">ATTRACTIVENESS</div><span style="font-size: 1.2em;">ATR</span></div>
             <h3>5</h3>
           </div>
           <div class="clear"></div>
@@ -348,84 +356,301 @@ CRIMINAL RECORD:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
             <div class="smwb" style="font-size:1.2em;margin:0px 0px 5px;">MELEE</div>
 
-            <div class="armour">
+            <div class="melee">
               <span class="a-t">
-                <div class="w"><i class="material-icons">arrow_drop_down</i>KARATE</div>
+                <div class="polka">
+                  <i class="material-icons">arrow_drop_down</i>
+                  <div class="title">
+                    BRAWLING
+                  </div>
+                  <div class="clear"></div>
+                </div>
               </span>
               <span class="a-c">
-                attack: 4<br>damage: 1d4<br>spacial: THROW throw opponent through a window.
+                <div class="desc">
+                  <div class="half nmob"><span class="w">ATK</span> 1d10+REF</div>
+                  <div class="half nmob"><span class="w">DMG</span> 1d4+STR<br></div>
+                  <div class="clear"></div>
+                  <div class="sm" style="margin-top:5px;"><span class="w">GRAPPLE</span> On a successful attack, instead of dealing melee damage, you grab your opponent. An opponent cannot move or take actions whilst grappled. Contested STR check to break free. Any ranged attack hit both you and your opponent.</div>
+                </div>
               </span>
             </div>
 
-            <div class="armour">
+            <div class="melee">
               <span class="a-t">
-                <div class="w"><i class="material-icons">arrow_drop_down</i>KNIFE</div>
+                <div class="polka">
+                  <i class="material-icons">arrow_drop_down</i>
+                  <div class="title">
+                    WING CHUN
+                  </div>
+                  <div class="clear"></div>
+                </div>
               </span>
               <span class="a-c">
-                <div class="sm">TORSO [1]</div>
-                <div class="sm">R.ARM [1]</div>
-                <div class="sm">L.ARM [1]</div>
+                <div class="desc">
+                  <div class="half nmob"><span class="w">ATK</span> 1d10+REF+2</div>
+                  <div class="half nmob"><span class="w">DMG</span> 1d4+STR<br></div>
+                  <div class="clear"></div>
+                </div>
               </span>
             </div>
 
-            <!--WEAPON:::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
-
-            <br><div class="smwb" style="font-size:1.2em;margin:0px 0px 5px;">WPN</div>
-
-            <div class="armour">
+            <div class="melee">
               <span class="a-t">
-                <div class="w"><i class="material-icons">arrow_drop_down</i>PISTOL</div>
+                <div class="polka">
+                  <i class="material-icons">arrow_drop_down</i>
+                  <div class="title">
+                    KRAV MAGA
+                  </div>
+                  <div class="clear"></div>
+                </div>
               </span>
               <span class="a-c">
-                Clip: 12 bullets<br>
-                Rate of Fire: 2 shots per round<br>
-                Recoil: -2<br>
-                Damage: 1d10<br>
-                <ul class="clip">
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
+                <div class="desc">
+                  <div class="half nmob"><span class="w">ATK</span> 1d10+REF</div>
+                  <div class="half nmob"><span class="w">DMG</span> 1d4+STR<br></div>
                   <div class="clear"></div>
-                </ul>
+                  <div class="sm" style="margin-top:5px;"><span class="w">DISARM</span> On a successful attack, instead of dealing melee damage, you knock a weapon out of your opponents hand.</div>
+                </div>
+              </span>
+            </div>
 
-                <br>
-
-                <ul class="clip double">
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
-                  <li class="bullet"></li>
+            <div class="melee">
+              <span class="a-t">
+                <div class="polka lethal">
+                  <i class="material-icons">arrow_drop_down</i>
+                  <div class="title">
+                    SYSTEMA
+                  </div>
                   <div class="clear"></div>
-                </ul>
+                </div>
+              </span>
+              <span class="a-c">
+                <div class="desc">
+                  <div class="half nmob"><span class="w">ATTACK</span> 1d10+REF</div>
+                  <div class="half nmob"><span class="w">DAMAGE</span> 1d4+STR<br></div>
+                  <div class="clear"></div>
+                  <div class="sm" style="margin-top:5px;"><span class="w">WEAPON HANDING</span> On a successful attack, instead of dealing melee damage, the attacker may fire one round from whatever weapon they are holding. This attack negates the need to aim, and the attacker may choose which body part to target.</div>
+                </div>
+              </span>
+            </div>
+
+            <!--RANGED:::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+            <br><div class="smwb" style="font-size:1.2em;margin:0px 0px 5px;">RANGED</div>
+
+            <div class="melee gun">
+              <span class="a-t">
+                <div class="polka lethal">
+                  <i class="material-icons">arrow_drop_down</i>
+                  <div class="title">
+                    STD PISTOL
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </span>
+              <span class="a-c">
+                <div class="desc">
+
+                  <div class="mag">
+                    <ul class="clip">
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <div class="clear"></div>
+                    </ul>
+                    <div class="sm" style="text-align:center;padding:0px 0px 3px;">PISTOL</div>
+                    <div class="w" style="text-align:center;padding:3px;">12</div>
+                  </div>
+
+                  <div class="dat">
+                    <div class="half">
+                      <div class="w" style="width:fit-content;margin-top:3px;">DAMAGE</div> 1d8
+                      <div class="w" style="width:fit-content;margin-top:3px;">F.RATE</div> 2 p/turn
+                      <div class="w" style="width:fit-content;margin-top:3px;">CONCEAL?</div> YES
+                    </div>
+                    <div class="half">
+                      <div class="w" style="width:fit-content;margin-top:3px;">RANGE</div> 30m
+                      <div class="w" style="width:fit-content;margin-top:3px;">RECOIL</div> -2
+                      <div class="w" style="width:fit-content;margin-top:3px;">RARITY</div> Uncommon
+                    </div>
+                  </div>
+
+                  <div class="clear"></div>
+                </div>
+              </span>
+            </div>
+
+            <div class="melee gun">
+              <span class="a-t">
+                <div class="polka lethal">
+                  <i class="material-icons">arrow_drop_down</i>
+                  <div class="title">
+                    STD RIFLE
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </span>
+              <span class="a-c">
+                <div class="desc">
+
+                  <div class="mag">
+                    <ul class="clip rifle">
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <div class="clear"></div>
+                    </ul>
+                    <div class="sm" style="text-align:center;padding:0px 0px 3px;">RIFLE</div>
+                    <div class="w" style="text-align:center;padding:3px;">30</div>
+                  </div>
+
+                  <div class="dat">
+                    <div class="half">
+                      <div class="w" style="width:fit-content;margin-top:3px;">DAMAGE</div> 1d8
+                      <div class="w" style="width:fit-content;margin-top:3px;">F.RATE</div> 2 p/turn
+                      <div class="w" style="width:fit-content;margin-top:3px;">CONCEAL?</div> YES
+                    </div>
+                    <div class="half">
+                      <div class="w" style="width:fit-content;margin-top:3px;">RANGE</div> 30m
+                      <div class="w" style="width:fit-content;margin-top:3px;">RECOIL</div> -2
+                      <div class="w" style="width:fit-content;margin-top:3px;">RARITY</div> Uncommon
+                    </div>
+                    <div class="clear"></div>
+                    <div class="sm">On a successful attack, instead of dealing melee damage, the attacker may fire one round from whatever weapon they are holding. This attack negates the need to aim, and the attacker may choose which body part to target.</div>
+                  </div>
+
+                  <div class="clear"></div>
+                </div>
+              </span>
+            </div>
+
+            <div class="melee gun">
+              <span class="a-t">
+                <div class="polka lethal">
+                  <i class="material-icons">arrow_drop_down</i>
+                  <div class="title">
+                    STD SHOTGUN
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </span>
+              <span class="a-c">
+                <div class="desc">
+
+                  <div class="mag">
+                    <ul class="clip shotgun">
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <div class="clear"></div>
+                    </ul>
+                    <div class="sm" style="text-align:center;padding:0px 0px 3px;">SHOTGUN</div>
+                    <div class="w" style="text-align:center;padding:3px;">8</div>
+                  </div>
+
+                  <div class="dat">
+                    <div class="half">
+                      <div class="w" style="width:fit-content;margin-top:3px;">DAMAGE</div> 1d8
+                      <div class="w" style="width:fit-content;margin-top:3px;">F.RATE</div> 2 p/turn
+                      <div class="w" style="width:fit-content;margin-top:3px;">CONCEAL?</div> YES
+                    </div>
+                    <div class="half">
+                      <div class="w" style="width:fit-content;margin-top:3px;">RANGE</div> 30m
+                      <div class="w" style="width:fit-content;margin-top:3px;">RECOIL</div> -2
+                      <div class="w" style="width:fit-content;margin-top:3px;">RARITY</div> Uncommon
+                    </div>
+                  </div>
+
+                  <div class="clear"></div>
+                </div>
+              </span>
+            </div>
+
+            <div class="melee gun">
+              <span class="a-t">
+                <div class="polka lethal">
+                  <i class="material-icons">arrow_drop_down</i>
+                  <div class="title">
+                    STD SNIPER RIFLE
+                  </div>
+                  <div class="clear"></div>
+                </div>
+              </span>
+              <span class="a-c">
+                <div class="desc">
+                  <div class="sm" style="margin-bottom: 5px;">On a successful attack, instead of dealing melee damage, the attacker may fire one round from whatever weapon they are holding. This attack negates the need to aim, and the attacker may choose which body part to target.</div>
+                  <div class="mag">
+                    <ul class="clip snipe">
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <li class="bullet"></li>
+                      <div class="clear"></div>
+                    </ul>
+                    <div class="sm" style="text-align:center;padding:0px 0px 3px;">SNIPE</div>
+                    <div class="w" style="text-align:center;padding:3px;">5</div>
+                  </div>
+
+                  <div class="dat">
+                    <div class="half">
+                      <div class="w" style="width:fit-content;margin-top:3px;">DAMAGE</div> 1d8
+                      <div class="w" style="width:fit-content;margin-top:3px;">F.RATE</div> 2 p/turn
+                      <div class="w" style="width:fit-content;margin-top:3px;">CONCEAL?</div> YES
+                    </div>
+                    <div class="half">
+                      <div class="w" style="width:fit-content;margin-top:3px;">RANGE</div> 30m
+                      <div class="w" style="width:fit-content;margin-top:3px;">RECOIL</div> -2
+                      <div class="w" style="width:fit-content;margin-top:3px;">RARITY</div> Uncommon
+                    </div>
+                    <div class="clear"></div>
+
+                  </div>
+
+                  <div class="clear"></div>
+                </div>
               </span>
             </div>
 
@@ -496,12 +721,12 @@ MEDICAL RECORD::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
           <!--MIND:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->
 
-          <span style="font-size:1.2em;line-height: 20px;">MIND:</span>
-          <i class="material-icons" style="vertical-align: sub;font-size: 1.4em;">cloud</i>
-          <i class="material-icons" style="vertical-align: sub;font-size: 1.4em;">cloud</i>
-          <i class="material-icons" style="vertical-align: sub;font-size: 1.4em;">cloud</i>
-          <i class="material-icons" style="vertical-align: sub;font-size: 1.4em;">cloud</i>
-          <i class="material-icons" style="vertical-align: sub;font-size: 1.4em;">cloud_queue</i>
+          <span style="font-size:1.2em;line-height: 20px;">STUN:</span>
+          <i class="material-icons" style="vertical-align: sub;font-size: 1.4em;">center_focus_strong</i>
+          <i class="material-icons" style="vertical-align: sub;font-size: 1.4em;">center_focus_strong</i>
+          <i class="material-icons" style="vertical-align: sub;font-size: 1.4em;">center_focus_strong</i>
+          <i class="material-icons" style="vertical-align: sub;font-size: 1.4em;">crop_free</i>
+          <i class="material-icons" style="vertical-align: sub;font-size: 1.4em;">crop_free</i>
           <br>
 
           <!--LIFE:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::-->

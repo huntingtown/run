@@ -49,7 +49,7 @@ h6{
       text-align: right;
       float: right;
   }
-.red{color:red;}
+.red{color:red;}.blue{color:deepskyblue;}
 ul,ol{font-size:1em;margin:0px;}
 li{list-style-type:none;}
 hr {
@@ -225,7 +225,7 @@ hr {
   visibility: visible;
 }
 
-.w{background:#fff; color:#000;}
+.w{background:#fff; color:#000; padding:0px 1px;}
 
 .wallet{
     writing-mode: horizontal-tb;
@@ -416,27 +416,83 @@ ul.tech{padding:0px;}
 .augment .data .w.bonus{text-transform: uppercase;padding: 0px 3px;border-bottom: 1px solid #000;}
 .augment span.a-c{padding:0px;}.augment span.a-c::after{content:"";}
 
+.polka {
+      background: transparent;
+      background-image: radial-gradient(#555 20%, transparent 0), radial-gradient(#555 20%, transparent 0);
+      background-size: 10px 10px;
+      background-position: 0px 0, 15px 15px;
+      animation-name:polka;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: steps(100, end);
+  }
+  .polka.lethal {background-image: radial-gradient(#b91a1a 20%, transparent 0), radial-gradient(#b91a1a 20%, transparent 0);}
+    @keyframes polka{
+      0%{background-position: 0px 0px,  15px 15px;}
+      50%{background-position: 15px 0px, 30px 15px;}
+      100%{background-position: 30px 0px, 45px 15px;}
+    }
+.melee{margin-bottom:5px;}
+  .melee i {
+    background: #000;
+    color: #fff;
+    float: left;
+    border-bottom:2px solid #000;
+  }
+  .melee .title {
+      background: #000;
+      width: fit-content;
+      float: left;
+      padding: 5px 10px 5px 0px;
+      border-bottom: 2px solid #000;
+  }
+  .melee .polka {border-bottom: 1px solid #555;}
+  .melee .polka.lethal {border-bottom: 1px solid #b91a1a;}
+  .melee .desc{padding:5px 0px;border-bottom: 1px dashed #333;}
+  .melee .a-c::after{line-height: 5px;}
+.gun .dat{width:70%; box-sizing: border-box;float:right;}
+  .gun .dat .sm{margin:3px 0px;}
+.gun .mag {
+    float: left;
+    width: 27%;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    margin-right: 3%;
+}
 ul.clip {
     border: 1px solid;
-    margin: 10px;
+    margin: 5px auto;
     padding: 1px;
     width: 12px;
     border-top: 0px;
     border-bottom: 4px solid;
 }
-  ul.clip.double {width: 24px;}
-    li.bullet {
-      width: 10px;
-      border: 2px solid;
-      margin: 1px;
-      border-top-left-radius: 10px;
-      border-bottom-left-radius: 10px;
-      border-right: 3px double;
-      box-sizing: border-box;
-      float: left;
-    }
-
-
+  li.bullet {
+    width: 10px;
+    border: 2px solid;
+    margin: 1px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: 3px double;
+    box-sizing: border-box;
+    float: left;
+  }
+    ul.clip.rifle {width: 24px;}
+    ul.clip.shotgun {width: 18px;}
+      .shotgun li.bullet {
+        width: 7px;height: 7px;
+        border-radius: 10px;
+        background: #fff;
+      }
+    ul.clip.snipe {width: 24px;}
+      .snipe li.bullet {
+        width: 22px;
+        height: 5px;
+        border: 1px solid;
+        border-right: 3px double;
+        border-left: 6px solid;
+        margin:2px 1px
+      }
 /* =============================================================================
 MEDIA QUERY --------------------------------------------------------------------
 ============================================================================= */
