@@ -4,9 +4,9 @@
 }
 body{background:black;color:#fff;font-family:Share Tech Mono;max-width:100vw;-webkit-font-smoothing: antialiased;font-size: 12px;}
 
-p{font-size:12px;max-width:600px;text-align:justify;} p::before{content:'>';color:#fff;}
+p {margin-bottom: 0.8em;margin-top: 0px;}
 a{color:lightgreen; text-decoration:none;}
-
+.ag{color:goldenrod;}
 h1{
   font-size:3em;
   font-weight:100;
@@ -101,6 +101,20 @@ hr {
 
 .cont{padding:30px 20px;}
 
+.col_1{width:20%;float:left;padding:0px 5px;box-sizing: border-box;}
+  .clear_1{clear:none;}
+.col_2{width:20%;float:left;padding:0px 5px;box-sizing: border-box;}
+  .clear_2{clear:none;}
+.col_3{width:20%;float:left;padding:0px 5px;box-sizing: border-box;}
+  .clear_3{clear:none;}
+.col_4{width:15%;float:left;padding:0px 5px;box-sizing: border-box;}
+  .clear_4{clear:none;}
+.col_5{width:20%;float:left;padding:0px 5px;box-sizing: border-box;}
+  .clear_5{clear:none;}
+.col_6{width: 5%;float:left;padding:0px 5px;box-sizing: border-box;}
+  .clear_6{clear:none;}
+
+
 .col1{float:left;display:block;box-sizing: border-box;padding:0px 10px;width:25%; }
 .col2{float:left;display:block;box-sizing: border-box;width:5%; }
 .col3{float:right;display:block;box-sizing: border-box;padding:0px 10px;width:70%; }
@@ -159,12 +173,39 @@ hr {
 @keyframes stripe {
     0%{background-position:  0% 0%;}
    100%{background-position:  92.4% 100%;}
+}
+.agstripe {
+    background: repeating-linear-gradient( -45deg, #fff, #fff 10px, #000 10px, #000 30px );
+    animation-name: agstripe;
+    animation-iteration-count: infinite;
+    animation-duration: 120s;
+    animation-timing-function: linear;
+    background: transparent;
+    background-image: repeating-linear-gradient( 45deg, #fff, #fff 6px, #000 4px, #000 18px ),repeating-linear-gradient( 45deg, #fff, #fff 6px, #000 4px, #000 18px );
+    background-size: 100% 9000%;
+    background-position: 0% 0%;
+    margin:0px;
+    box-sizing: border-box;
+}
+@keyframes agstripe {
+    0%{background-position:  0% 0%;}
+   100%{background-position:  0% 100%;}
 
 }
 .smwb{font-size: 1.5em; background:#fff; padding:3px 5px; color:#000;margin-right:10px;}
 
-.bstat{border-top:1px solid #555;}
-.bstat .title{border-left: 1px solid #555; padding: 2px 5px;}
+ul.bstat{padding:0px;margin:5px 0px;}
+ul.bstat li{width:50%;float:left;box-sizing: border-box;padding: 3px;position:relative;}
+  .bstat li:nth-child(1){border-bottom:1px solid #555;border-right:1px solid #555;}
+    .bstat li:nth-child(1):after{content:" ";width:10px;height:10px;position: absolute;border-top:1px solid #555;border-left:1px solid #555; top:0px; left:0px;}
+  .bstat li:nth-child(2){border-bottom:1px solid #555;}
+    .bstat li:nth-child(2):after{content:" ";width:10px;height:10px;position: absolute;border-top:1px solid #555;border-right:1px solid #555; top:0px; right:0px;}
+  .bstat li:nth-child(3){border-right:1px solid #555;}
+    .bstat li:nth-child(3):after{content:" ";width:10px;height:10px;position: absolute;border-bottom:1px solid #555;border-left:1px solid #555; bottom:0px; left:0px;}
+  .bstat li:nth-child(4){}
+    .bstat li:nth-child(4):after{content:" ";width:10px;height:10px;position: absolute;border-bottom:1px solid #555;border-right:1px solid #555; bottom:0px; right:0px;}
+    .bstat li:nth-child(4):before{content:" ";width:11px;height:11px;position: absolute;border:1px solid #555; top:-7px; left:-7px;border-radius: 50px;}
+.bstat .title{padding: 2px 5px;}
 .bstat h3{padding: 3px 5px;}
 
 .col2 .smwb {
@@ -177,13 +218,7 @@ hr {
     writing-mode: horizontal-tb;
     text-align: center;
 }
-.pport{
-    height: auto;
-    border: 1px solid #555;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5px 3px;
-}
+.pport{border: 1px solid #555;}
 
 .stats li {
     border-bottom: 1px solid #333;
@@ -256,9 +291,8 @@ hr {
 .a-c.default {display: block;}
 
 .credit{
-  width:100%;
-  box-sizing: border-box;
-  padding: 0px 4px 15px;
+  writing-mode: vertical-rl;
+  margin: 0 auto 20px;
 }
 .defblock{
   padding:5px;
@@ -266,15 +300,22 @@ hr {
 }
 
 .storage{
-  height: 200px;
   border: 1px solid #fff;
   overflow: hidden;
   margin:3px 0px 10px;
   background: transparent;
   background-image: repeating-linear-gradient( -45deg, #555, #555 1px, #000 2px, #000 8px );
 }
-  .storage.home {border: 1px solid #333;}
-
+  .storage.home {border: 1px solid #555;}
+  .storage .a-c::after {content: "";}
+  .storage .itemd {
+    background: #aaa;
+    color: #000;
+    border: 1px solid;
+    border-top: 1px dotted #fff;
+    margin-top: -1px;
+  }
+  .itemd .sm {padding: 3px;}
 .storage li {
     background: #fff;
     color: #000;
@@ -290,7 +331,7 @@ hr {
     .storage li.m{height:40px;}.storage li.m::before {content: '[M] ';}
     .storage li.l{height:80px;}.storage li.l::before {content: '[L] ';}
     .storage li.xl{height:160px;}.storage li.xl::before {content: '[X] ';}
-      .storage.home li{background:#333;}
+      .storage.home li{background:#555;}
 
 ul.ram {margin: 0px;padding: 0px;}
 .ram li {
@@ -355,6 +396,15 @@ ul.prog{padding:0px}
     border-bottom-left-radius: 10px;
   }
     ul.prog li span.a-c::after{content:"";}
+
+    ul.prog li .half{
+      border: 1px solid #555;
+      padding: 3px;
+      text-align: center;
+      margin: 0px;
+      margin-top: 3px;
+    }
+      ul.prog li .half:nth-child(even){border-left: 0px;}
 .subroutines{margin: 3px 0px;} .subroutines .w{margin-bottom:3px; text-transform: uppercase;padding:0px 3px;}
   .subroutines ul {padding: 0px;}
     .subroutines ul li {margin: 2px 0px;border: 0px;float:left;}
@@ -395,15 +445,15 @@ ul.tech{padding:0px;}
   position: relative;
   margin:0px;
   width: fit-content;
-  padding-right: 50px;
+  padding-right: 10px;
   border-left: 10px double;
 }
 .augment .smwb::after {
     content: ' ';
     position: absolute;
     bottom: 0;
-    right: 0;
-    border-top: 20px solid black;
+    right: -20;
+    border-top: 20px solid transparent;
     border-left: 20px solid white;
     width: 0;
 }
@@ -412,8 +462,46 @@ ul.tech{padding:0px;}
     margin-left: 3px;
     padding-left: 3px;
 }
-.augment .data .info{border-top: 1px solid #fff;padding: 5px 0px;}
-.augment .data .w.bonus{text-transform: uppercase;padding: 0px 3px;border-bottom: 1px solid #000;}
+
+.augment .bonus {
+    border: 1px solid goldenrod;
+    margin-bottom: 3px;
+    border-left: 4px solid goldenrod;
+}
+  .augment .bonus.passive{border:1px solid;border-left:4px solid;}
+  .augment .bonus .bat {
+      color: #fff;
+      padding: 5px 2px;
+      text-align: right;
+      box-sizing: border-box;
+  }
+    .augment .bonus .bat .sm {
+      float: none;
+      padding: 0px;
+      width: 100%;
+    }
+  .augment .bonus .bat i{
+    vertical-align: middle;
+    font-size: 2em;
+    padding: 0px;
+    line-height: 1em;
+    float:right;
+  }
+.augment .bonus .sm{
+    vertical-align: top;
+    padding: 0 5px 5px;
+    box-sizing: border-box;
+    font-size: 0.8em;
+}
+.augment .bonus .bon {
+    background: goldenrod;
+    color: #000;
+    margin: 3px 0px 0px;
+    font-size: 1.3em;
+    padding: 1px 3px;
+    width: fit-content;
+    display: inline-block;
+}
 .augment span.a-c{padding:0px;}.augment span.a-c::after{content:"";}
 
 .polka {
@@ -449,9 +537,11 @@ ul.tech{padding:0px;}
   .melee .polka {border-bottom: 1px solid #555;}
   .melee .polka.lethal {border-bottom: 1px solid #b91a1a;}
   .melee .desc{padding:5px 0px;border-bottom: 1px dashed #333;}
+  .melee .desc img{margin-bottom:5px;}
   .melee .a-c::after{line-height: 5px;}
-.gun .dat{width:70%; box-sizing: border-box;float:right;}
+.gun .dat{width:100%; box-sizing: border-box;float:right;}
   .gun .dat .sm{margin:3px 0px;}
+  .gun .dat .w{line-height: 18px;}
 .gun .mag {
     float: left;
     width: 27%;
@@ -459,6 +549,23 @@ ul.tech{padding:0px;}
     border: 1px solid #555;
     margin-right: 3%;
 }
+.gun img{width:70%;}
+
+.melee .mod {
+    border: 1px solid #333;
+    padding: 1px;
+    margin: 3px 0px;
+}
+.melee .mod .g{color:#333;}
+.melee .mod.filled{border:1px solid #555;}
+  .melee .mod.filled .g{color:#fff;}
+  .melee .mod .loc.sm {
+    background: #333;
+    display: inline-block;
+    padding: 5px;
+    color: #000;
+  }
+  .melee .mod.filled .loc.sm{background:#555;}
 ul.clip {
     border: 1px solid;
     margin: 5px auto;
@@ -493,11 +600,33 @@ ul.clip {
         border-left: 6px solid;
         margin:2px 1px
       }
+
+.kjmeter {
+  width: 100%;
+  border: 1px solid #fff;
+  box-sizing: border-box;
+  padding: 2px;
+  position: relative;
+}
+  .kjmeter .power {
+    background: transparent;
+    background-image: repeating-linear-gradient( -45deg, #555, #555 1px, #000 2px, #000 4px );
+    box-sizing: border-box;
+    height: 10px;
+    border: 1px solid #555;
+  }
+    .kjmeter .cp {
+      background: #fff;
+      box-sizing: border-box;
+      height: 10px;
+      position: absolute;
+      top: 2px;
+    }
 /* =============================================================================
 MEDIA QUERY --------------------------------------------------------------------
 ============================================================================= */
 
-@media only screen and (min-width: 1600px) {
+@media only screen and (max-width: 1500px) {
 
   .col12cont{width:25%}
   .col1{width:85%;}
@@ -505,9 +634,37 @@ MEDIA QUERY --------------------------------------------------------------------
   .col3{width:40%;}
   .col4{width:35%;float:left;}
 
+  .col_1{width:30%;}
+    .clear_1{}
+  .col_2{width:25%;}
+    .clear_2{}
+  .col_3{width:40%;}
+    .clear_3{clear:both;}
+  .col_4{width:40%;}
+    .clear_4{}
+  .col_5{width:60%;}
+    .clear_5{}
+  .col_6{}
+    .clear_6{}
+
+
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1025px) {
+
+  .col_1{}
+    .clear_1{}
+  .col_2{width:30%;}
+    .clear_2{}
+  .col_3{width:30%;}
+    .clear_3{}
+  .col_4{}
+    .clear_4{}
+  .col_5{}
+    .clear_5{}
+  .col_6{width: 10%;}
+    .clear_6{}
+
   .col12cont{width:30%; float:left;}
   .col1{width:100%;}
   .col2{
@@ -517,44 +674,7 @@ MEDIA QUERY --------------------------------------------------------------------
     height:auto;
     padding:0px 10px
   }
-  #wallet .smwb {
-      width: 10%;
-      height: 32px;
-      padding: 8px;
-  }
-  #wallet .wallet{
-    width: 90%;
-    height: 32px;
-    text-align: left;
-  }
 
-  .credit {
-    width: 85%;
-    box-sizing: border-box;
-    padding: 0px 4px 15px;
-  }
-  #passport{width:100%;}
-  #passport .smwb {
-    width: 10%;
-    height: 32px;
-    padding: 4px;
-    height:70px;
-    box-sizing: border-box;
-    writing-mode: tb;
-  }
-  #passport .pport {
-    width:75%;
-    height:70px;
-    box-sizing: border-box;
-  }
-  #passport i{
-    width:15%;
-    height:70px;
-    box-sizing: border-box;
-    margin: 0px;
-    border-left: 0px;
-    padding: 22px 0px;
-  }
   h5.fl {
       width: 15%;
       line-height: 1em!important;
@@ -571,7 +691,21 @@ MEDIA QUERY --------------------------------------------------------------------
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 769px) {
+
+  .col_1{width:45%;}
+    .clear_1{}
+  .col_2{width:45%;}
+    .clear_2{clear:both;}
+  .col_3{width:50%;}
+    .clear_3{clear:none}
+  .col_4{width:50%}
+    .clear_4{}
+  .col_5{width:100%;}
+    .clear_5{}
+  .col_6{}
+    .clear_6{}
+
   .col12cont{width:100%}
   .col1,.col2,.col3,.col4{width:100%;padding: 0px;}
   h5.fl {width: 15%;text-align: center;}
@@ -582,11 +716,38 @@ MEDIA QUERY --------------------------------------------------------------------
   .credit {width: 70%;}
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
+
+  .col_1{width:100%;}
+    .clear_1{clear:none;}
+  .col_2{width:100%;}
+    .clear_2{clear:none;}
+  .col_3{width:100%;}
+    .clear_3{clear:none;}
+  .col_4{width:100%;}
+    .clear_4{clear:none;}
+  .col_5{width:100%;}
+    .clear_5{clear:none;}
+  .col_6{width:100%;}
+    .clear_6{clear:none;}
+
   .half{width:100%;}
   .half.first, .half.last{padding:0px;}
   .half.defblock, .half.nmob{width:50%;}
   .topright,.topleft,.bottomleft,.bottomright{display:none;}
-  .cont{padding:10px;}
-  .a-c {display: block;} .a-c.default {display: none;}
+  .cont{padding:10px 0;}
+  .a-c.default {display: none;}
+  .wallet div {max-width: 100%!important;}
+  .col_6 h5 {
+    width: 15%;
+    float: left;
+    margin-top: -10px;
+  }
+  .prof{float:left;}
+  .credit{writing-mode: horizontal-tb;margin: 0px 0px 10px;}
+  .pport div {
+    writing-mode: horizontal-tb!important;
+    margin: 5px!important;
+  }
+  .religious{writing-mode:horizontal-tb!important; margin:0px!important; text-align: center;}
 }
