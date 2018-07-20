@@ -1,0 +1,41 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function($) {
+      $('#accordion').find('.a-t').click(function(){
+
+        //Expand or collapse this panel
+        $(this).next().slideToggle('fast');
+
+      });
+    });
+  </script>
+</head>
+
+<body id="accordion">
+<div class="cont" style="max-width:300px;margin:auto;">
+
+  <div class="armour">
+    <span class="a-t">
+      <div class="w"><i class="material-icons">arrow_drop_down</i>TENDERLOIIN JACKET</div>
+    </span>
+    <span class="a-c">
+      <img src="https://i.pinimg.com/564x/13/46/cc/1346cc45db20885d6bfda30762f2bdea.jpg">
+      <div style="padding:3px;font-size:0.9em;">
+        <span class="w">CAP</span> 60<br>
+        The Tenderloin jacket offers basic protection as well as protections from the following:<br>
+        <span class="w">ACID RAIN</span>
+        <span class="w">CHEM AIR</span>
+      </div>
+      <div class="sm">TORSO [1]</div>
+      <div class="sm">R.ARM [1]</div>
+      <div class="sm">L.ARM [1]</div>
+    </span>
+  </div>
+
+</div>
+</body>

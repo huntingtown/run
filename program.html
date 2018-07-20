@@ -1,0 +1,52 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function($) {
+      $('#accordion').find('.a-t').click(function(){
+
+        //Expand or collapse this panel
+        $(this).next().slideToggle('fast');
+
+      });
+    });
+  </script>
+</head>
+
+<body id="accordion">
+<div class="cont" style="max-width:800px;">
+
+  <ul class="prog">
+
+    <li>
+      <span class="a-t"><h6>White Teeth<span class="w">2</span></h6></span>
+      <span class="a-c">
+        <div class="half nmob">
+          <div class="sm" style="margin-bottom:3px;">RAM REQ</div>
+          <span style="font-family:spaceport;font-size: 1.5em;">1</span>
+        </div>
+        <div class="half nmob">
+          <div class="sm" style="margin-bottom:3px;">RUN COST</div>
+          <span style="font-family:spaceport;font-size: 1.5em;">3<i class="material-icons" style="font-size:1em;vertical-align:middle;">flash_on</i></span>
+        </div>
+        <div class="clear"></div>
+        <div class="subroutines">
+          <div class="w">subroutines</div>
+          <ul>
+            <li><i class="material-icons" style="font-size:1em;vertical-align:middle;">subdirectory_arrow_right</i></li>
+            <li>Destroy a TRACER for 3<i class="material-icons" style="font-size:1em;vertical-align:middle;">flash_on</i></li>
+            <li><i class="material-icons" style="font-size:1em;vertical-align:middle;">subdirectory_arrow_right</i></li>
+            <li>Gain 1 program level</li>
+            <div class="clear"></div>
+          </ul>
+        </div>
+      </span>
+    </li>
+    
+  </ul>
+
+</div>
+</body>

@@ -1,0 +1,54 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function($) {
+      $('#accordion').find('.a-t').click(function(){
+
+        //Expand or collapse this panel
+        $(this).next().slideToggle('fast');
+
+      });
+    });
+  </script>
+</head>
+
+<body id="accordion">
+  <div class="g topright"><i class="material-icons">add</i></div>
+  <div class="g topleft"><i class="material-icons">add</i></div>
+  <div class="g bottomright"><i class="material-icons">add</i></div>
+  <div class="g bottomleft"><i class="material-icons">add</i></div>
+
+  <div class="cont">
+
+    <div class="polkabg">
+      <div class="bread g">
+        SAGACITY v0.1:CC//
+      </div>
+
+      <h4>:CC:</h4>
+      <br>
+      <p>Minimum System Requirements:</p>
+      <div class="choices">
+        <img class="dice" src="../img/4.png">
+        <img class="dice" src="../img/6.png">
+        <img class="dice" src="../img/8.png">
+        <img class="dice" src="../img/10.png">
+        <img class="dice" src="../img/12.png">
+        <img class="dice" src="../img/20.png">
+      </div>
+      <p>Make a note of every roll you make in the exact order you make them.</p>
+      <p><b>All rolls must be recorded as two digits.</b></p>
+      <p>This will generate your unique 26 digit character ID.</p>
+      <br>
+      <br>
+      <a href="ethnicity.html" class="button">start</a>
+
+    </div>
+
+  </div>
+
+</body>

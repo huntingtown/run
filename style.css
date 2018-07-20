@@ -29,6 +29,12 @@ h3{
   font-family: Spaceport;
   font-weight: 100;
 }
+h4 {
+    font-size: 1.2em;
+    font-family: open sans;
+    margin: 0 0 5px;
+    letter-spacing: 4px;
+}
 h5 {
   text-orientation: upright;
   font-size: 4em;
@@ -324,6 +330,7 @@ ul.bstat li{width:50%;float:left;box-sizing: border-box;padding: 3px;position:re
       width: fit-content;
       padding: 3px;
       display: inline-block;
+      border: 3px double #000;
     }
       .itemd .mod .sm {
         border: 0px;
@@ -339,7 +346,7 @@ ul.bstat li{width:50%;float:left;box-sizing: border-box;padding: 3px;position:re
       .itemd .mod span {
         display: none;
       }
-      
+
 .storage li {
     background: #fff;
     color: #000;
@@ -360,7 +367,7 @@ ul.bstat li{width:50%;float:left;box-sizing: border-box;padding: 3px;position:re
 
 
 ul.ram {margin: 0px;padding: 0px;}
-.ram li {
+  ul.ram li {
     border-right: 2px solid #000;
     width: 10%;
     height: 7px;
@@ -368,34 +375,29 @@ ul.ram {margin: 0px;padding: 0px;}
     box-sizing: border-box;
     margin: 2px 0px;
     background: #555;
-}
-  .ram li.w {background: #fff;}
+  }
+    ul.ram li.w {background: #fff;}
 
 ul.mods{padding:0px}
-ul.mods li {
+  ul.mods .a-c::after{content:"";}
+  ul.mods li {
     border: 1px solid #555;
     padding: 2px;
     box-sizing: border-box;
     margin: 3px 0px;
     min-height: 30px;
     border-left: 4px double #333;
-}
-ul.mods li:first-child{border-top-right-radius: 12px;}
-ul.mods li:first-child .mod{border-top-right-radius: 10px;}
-ul.mods li:last-child{border-bottom-right-radius: 12px;}
-ul.mods li:last-child .mod{border-bottom-right-radius: 10px;}
-li .mod {
-    border: 1px solid #fff;
-    padding: 10px;
-    border-left: 4px dashed;
-    font-weight: bold;
-    font-family: sans-serif;
-}
-.mods span.a-c {
-    font-weight: 100;
-    font-family: Share Tech mono;
-    font-size: 0.9em;
-}
+  }
+    ul.mods li:first-child{border-top-right-radius: 12px;}
+    ul.mods li:first-child .mod{border-top-right-radius: 10px;}
+    ul.mods li:last-child{border-bottom-right-radius: 12px;}
+    ul.mods li:last-child .mod{border-bottom-right-radius: 10px;}
+
+li .mod {border: 1px solid #fff;border-left: 4px dashed;}
+  li .mod h6{font-weight: bold;font-family: sans-serif;padding:10px;}
+    li .mod .desc{border-top: 1px dashed #555;}
+      li .mod .desc .sm{padding:10px;}
+
 
 
 .spin{
@@ -447,16 +449,11 @@ ul.tech{padding:0px;}
     ul.tech li:nth-child(even){width:10%;margin-left:5%;text-align: center;}
     ul.tech li:nth-child(odd){width:85%;}
 
-.mods .desc{
-  margin-top: 5px;
-  border-top: 1px dashed #555;
-  padding-top: 5px;
-}
 
-.mods .a-c::after{content:"";}
 
-.armour{border:1px solid #555;border-bottom:0px;margin-top:3px;}
-.armour .sm{padding:3px; border-bottom:1px solid #555;}
+.armour{border:1px solid #555;margin-top:3px;}
+
+.armour .sm{padding:3px; border-top:1px solid #555;}
 .armour i, .augment i{vertical-align: middle;font-size: 1.5em;line-height: 5px;}.augment i{padding-right:5px}
 .armour .a-c::after{content:"";}
 
@@ -680,6 +677,105 @@ ul.clip {
       position: absolute;
       top: 2px;
     }
+
+.polkabg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    background: transparent;
+    background-image: radial-gradient(#333 20%, transparent 0), radial-gradient(#333 20%, transparent 0);
+    background-size: 10px 10px;
+    background-position: 0px 0, 15px 15px;
+    width:90%;
+    max-width: 1000px;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+    animation-name: polkavert;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(100, end);
+}
+@keyframes polkavert{
+  0%{background-position: 0px 0px,  15px 15px;}
+  50%{background-position: 0px 15px, 15px 30px;}
+  100%{background-position: 0px 30px, 15px 45px;}
+}
+
+.polkabg .smwb{margin:0px;}
+
+.polkabg .fourth{margin-bottom:15px;}
+
+.langtitle{
+  text-transform: uppercase;font-size: 1.2em;margin-bottom: 10px;
+}
+
+.langdrop{
+  border:1px solid #333;
+  padding:10px;
+  background:#000;
+  box-sizing: border-box;
+  text-align: left;
+}
+.choices {margin: 50px 0px;}
+  .choices .half{margin-bottom:15px;}
+
+a.button {
+    border: 1px double #555;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    background: #000;
+    color:#fff;
+}
+  a.button:hover{border:1px solid #fff;}
+
+.dice{width: 50px;margin: 15px;}
+
+.bread {
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    font-size: 0.8em;
+    text-align: left;
+}
+
+.tac{text-align: center;}
+
+.mb3{margin-bottom:3px;}.mb5{margin-bottom:5px;}
+
+.bread.g a {color: rgba(255,255,255,0.5);}
+  .bread.g a:hover {color: rgba(255,255,255,1);}
+
+.langdrop .third {
+  margin-bottom: 15px;
+}
+
+.help {
+    background: #000;
+    z-index: 500;
+    box-sizing: border-box;
+    margin: 35px 25px -15px;
+    position: relative;
+    padding: 25px;
+    background-image: radial-gradient(#333 20%, transparent 0), radial-gradient(#333 20%, transparent 0);
+    background-size: 10px 10px;
+    background-position: 0px 0, 15px 15px;
+    animation-name: polkavert;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(100, end);
+}
+
+.help .tit{
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+    margin-bottom: 5px;
+    padding-bottom: 3px;
+    text-transform: uppercase;
+}
+
 /* =============================================================================
 MEDIA QUERY --------------------------------------------------------------------
 ============================================================================= */
@@ -747,6 +843,16 @@ MEDIA QUERY --------------------------------------------------------------------
       padding: 5px 0px;
       height: 40px;
   }
+  .polkabg {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 50px auto;
+  }
+  .langdrop .third {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 769px) {
@@ -790,10 +896,11 @@ MEDIA QUERY --------------------------------------------------------------------
     .clear_6{clear:none;}
 
   .half{width:100%;}
-  .half.first, .half.last{padding:0px;}
+  .half:nth-child(odd), .half:nth-child(even){padding:0px;}
+  .fourth{width:100%;} .fourth.nmob{width:25%;}
   .half.defblock, .half.nmob{width:50%;}
-  .topright,.topleft,.bottomleft,.bottomright{display:none;}
-  .cont{padding:10px 0;}
+  .bottomleft,.bottomright{display:none;}
+  .cont{padding:10px 0;margin-top:30px;}
   .a-c.default {display: none;}
   .wallet div {max-width: 100%!important;}
   .col_6 h5 {
@@ -808,4 +915,8 @@ MEDIA QUERY --------------------------------------------------------------------
     margin: 5px!important;
   }
   .religious{writing-mode:horizontal-tb!important; margin:0px!important; text-align: center;}
+  .polkabg {
+    width: 95%;
+    padding: 50px 15px;
+  }
 }

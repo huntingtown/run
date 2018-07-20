@@ -1,0 +1,37 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function($) {
+      $('#accordion').find('.a-t').click(function(){
+
+        //Expand or collapse this panel
+        $(this).next().slideToggle('fast');
+
+      });
+    });
+  </script>
+</head>
+
+<body id="accordion">
+<div class="cont" style="max-width:600px;">
+
+  <div class="storage">
+
+    <li class="s a-t">stim kit</li>
+    <span class="a-c">
+      <div class="itemd">
+        <img src="https://i.pinimg.com/564x/1f/3d/56/1f3d561e4e173e6bcba8130eb0c5663e.jpg">
+        <div class="sm">
+          something.
+        </div>
+      </div>
+    </span>
+
+  </div>
+
+</div>
+</body>

@@ -1,0 +1,53 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function($) {
+      $('#accordion').find('.a-t').click(function(){
+
+        //Expand or collapse this panel
+        $(this).next().slideToggle('fast');
+
+      });
+    });
+  </script>
+</head>
+
+<body id="accordion">
+  <div class="g topright"><i class="material-icons">add</i></div>
+  <div class="g topleft"><i class="material-icons">add</i></div>
+  <div class="g bottomright"><i class="material-icons">add</i></div>
+  <div class="g bottomleft"><i class="material-icons">add</i></div>
+
+  <div class="cont">
+
+    <div class="polkabg">
+      <div class="bread g">
+        SAGACITY v0.1:CC//
+        <a href="ethnicity.html">ETHNICITY</a> >
+        <span style="color:#fff">BIRTH FRAME</span> >
+      </div>
+
+      <h4>BIRTH FRAME</h4>
+      <img class="dice" src="../img/4.png">
+      <p>Roll <b>1d4</b> for each of your four FRAME stats.</p>
+
+      <div class="choices">
+        <div class="fourth" style="background:#000;"><div class="smwb">STR</div>STRENGTH</div>
+        <div class="fourth" style="background:#000;"><div class="smwb">REF</div>REFLEX</div>
+        <div class="fourth" style="background:#000;"><div class="smwb">END</div>ENDURANCE</div>
+        <div class="fourth" style="background:#000;"><div class="smwb">ATR</div>ATTRACTIVNESS</div>
+        <div class="clear"></div>
+      </div>
+      <p>Results must be attributed in the order they are rolled.</p>
+<br><br>
+      <a href="parent-one.html" class="button">next</a>
+
+    </div>
+
+  </div>
+
+</body>

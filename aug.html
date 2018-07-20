@@ -1,0 +1,94 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function($) {
+      $('#accordion').find('.a-t').click(function(){
+
+        //Expand or collapse this panel
+        $(this).next().slideToggle('fast');
+
+      });
+    });
+  </script>
+</head>
+
+<body id="accordion">
+  <div class="cont" style="max-width:800px;">
+
+    <div class="augment">
+      <span class="a-t">
+        <div class="agstripe">
+          <div class="smwb"><i class="material-icons">arrow_drop_down</i>FRAMESHIFT EXO</div>
+        </div>
+      </span>
+      <span class="a-c">
+        <div class="data">
+          <div class="sm info">
+            <img src="https://cdna.artstation.com/p/assets/images/images/001/962/254/large/andrea-chiampo-exoskeleton-character-perspective-images-a.jpg?1455212901">
+            <div style="margin:7px 0 5px;">Frameshift Cybernetics, a division of Frameshift Corporation, had created many cybernetic devices to augment human function. Aural and Ocular implants were used to convey information directly into the user’s senses. These were used in everyday life before the apocalypse, replacing smart phones and other hand-held devices.</div>
+          </div>
+
+          <div class="bonus">
+            <div class="half nmob" style="padding:10px 5px 0px;">
+              <span class="w">LIGHT</span>
+            </div>
+            <div class="half nmob bat">
+              <i class="material-icons ag">battery_charging_full</i>
+              <span class="sm">TO USE</span><br>
+              100KJ
+            </div>
+            <div class="clear"></div>
+            <div class="sm">
+              <p>The augment sheds bright light in a 20-foot radius and dim light for an additional 20 feet. Completely covering the object with something opaque blocks the light.</p>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+          <div class="bonus">
+            <div class="half nmob" style="padding:10px 5px 0px;">
+              <span class="w">MIND PROBE</span>
+            </div>
+            <div class="half nmob bat">
+              <i class="material-icons ag">battery_charging_full</i>
+              <span class="sm">TO USE</span><br>
+              2500KJ
+            </div>
+            <div class="clear"></div>
+            <div class="sm">
+              <p>You attempt to beguile a humanoid that you can see within range. </p>
+              <p>It must succeed on a Wisdom saving throw or be charmed by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw. </p>
+              <p>While the target is charmed, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue commands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as "Attack that creature", "Run over there", or "Fetch that object". If the creature completes the order and doesn’t receive further direction from you, it defends and preserves itself to the best of its ability. </p>
+              <p>You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn’t do anything that you don’t allow it to do. During this time you can also cause the creature to use a reaction, but this requires you to use your own reaction as well. </p>
+              <p>Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends. </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+
+          <div class="bonus passive">
+            <div class="half nmob" style="padding:10px 5px 0px;">
+              <span class="w">EXO SKELETON</span>
+            </div>
+            <div class="half nmob bat">
+              <i class="material-icons red">battery_alert</i>
+              <span class="sm">REDUCE MAX</span><br>
+              -500KJ
+            </div>
+            <div class="clear"></div>
+            <div class="sm">
+              <p>The exo suit massively increases strength by renforcing core joints with advanced bio-hydraulics.</p>
+              <div class="bon">STR +3</div>
+              <div class="bon">END +2</div>
+              <div class="bon">LIFE +1</div>
+            </div>
+            <div class="clear"></div>
+          </div>
+        </div>
+      </span>
+    </div>
+
+  </div>
+</body>
