@@ -776,6 +776,134 @@ a.button {
     text-transform: uppercase;
 }
 
+/* poss delete */
+.hack{
+  margin: 15px;
+  color:lightgreen;
+}
+  .hack .w{background:lightgreen; color:#000;}
+  .hack p{margin:0px;padding:0px;}
+    .hack p::before{content:'+-+ ';}
+
+.enter{
+  width:fit-content;
+  border:1px dashed lightgreen;
+  margin:20px auto;
+  padding:20px;
+  color:lightgreen
+}
+/* end */
+
+body.decker {
+  background: #1e2938; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #1e2938 0%, #0e151d 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #1e2938 0%,#0e151d 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #1e2938 0%,#0e151d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e2938', endColorstr='#0e151d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  font-family: sans-serif;
+}
+.decker .hex{
+  background: transparent;
+  background-image: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 0);
+  background-size: 50px 50px;
+  background-position: 25px 25px;
+  min-height: 100%;
+}
+
+.hex .cont{padding:0px;margin:0px;}
+.hex h3 {
+    font-size: 1.5em;
+    margin: 0px;
+    font-family: sans-serif;
+    font-weight: 900;
+    letter-spacing: 5px;
+    padding: 8px;
+}
+
+.hex .b{border: 1px dashed #31373e;}
+
+.hex .b50 {width: 50px; min-height: 50px; padding:5px;box-sizing: border-box;overflow: hidden;position: relative;}
+  .hex .w50 {width:50px}
+.hex .b100{width: 100px;min-height: 100px;padding:5px;box-sizing: border-box;overflow: hidden;position: relative;}
+  .hex .w100{width:100px}
+.hex .b150{width: 150px;min-height: 150px;padding:5px;box-sizing: border-box;overflow: hidden;position: relative;}
+  .hex .w150{width:150px}
+.hex .b200{width: 200px;min-height: 200px;padding:5px;box-sizing: border-box;overflow: hidden;position: relative;}
+  .hex .w200{width:200px}
+.hex .b250{width: 250px;min-height: 250px;padding:5px;box-sizing: border-box;overflow: hidden;position: relative;}
+  .hex .w250{width:250px}
+.hex .b300{width: 300px;min-height: 300px;padding:5px;box-sizing: border-box;overflow: hidden;position: relative;}
+  .hex .w300{width:300px}
+.hex .b350{width: 350px;min-height: 350px;padding:5px;box-sizing: border-box;overflow: hidden;position: relative;}
+  .hex .w350{width:350px}
+
+  .hex .price {
+    background: #fff;
+    color: #1e2938;
+    padding: 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 12px 5px;
+  }
+
+  .hex .sm{font-size: 1em;}
+
+  /* HEX WPN */
+  .hex .melee i, .hex .melee .title {
+    background: transparent;
+    border-bottom: 0px;
+  }
+  .hex .melee .polka, .hex .melee .polka.lethal{border-bottom:0px;padding: 7px 0px;box-sizing: border-box;}
+  .hex .melee{margin:0px;}
+
+  /* HEX AUG */
+
+  .hex .augment{margin:0px;}
+  .hex .agstripe {
+    background-image: repeating-linear-gradient( 45deg, #fff, #fff 6px, transparent 4px, transparent 18px ),repeating-linear-gradient( 45deg, #fff, #fff 6px, transparent 4px, transparent 18px );
+  }
+  .hex .augment .smwb {
+    border-left: 0px;
+    padding: 12px 5px;
+  }
+  .hex .augment .smwb::after {
+    right: -38;
+    border-top: 38px solid transparent;
+    border-left: 38px solid white;
+  }
+  .hex .augment .data {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* HEX ITEM */
+
+  .hex .storage{margin:0px; padding:5px;background:transparent; box-sizing: border-box;}
+
+  .hex .storage li {
+    height: 38px;
+    padding: 11px 10px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid;
+  }
+  .hex .storage li:first-child{border-top:1px solid;}
+  .hex .storage .itemd {
+    background: transparent;
+    border: 1px solid #fff;
+    border-top: 0px;
+    margin:0px
+  }
+  .hex .itemd .sm {border: 0px;}
+
+
+
+
+
 /* =============================================================================
 MEDIA QUERY --------------------------------------------------------------------
 ============================================================================= */
