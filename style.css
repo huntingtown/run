@@ -900,6 +900,16 @@ body.decker {
   }
   .hex .itemd .sm {border: 0px;}
 
+  /* HEX COMP */
+
+  .hex ul.mods li {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .hex li .mod h6 {font-weight: 500;}
+
 
 
 
