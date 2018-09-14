@@ -879,6 +879,14 @@ body.decker {
   min-height: 100%;
 }
 
+.hex hr {
+    width: 100%;
+    margin: 24px 0px 0px;
+    height: 25px;
+    border-top: 1px dashed #41474f;
+}
+  .hex hr::before, .hex hr::after{content:'';width:0px;}
+
 .hex .cont{padding:0px;margin:0px;}
 .hex h3 {
     font-size: 1.5em;
@@ -987,6 +995,63 @@ body.decker {
     background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%);
   }
 
+  .window{
+    width:2500px;
+  }
+  .container{
+    column-count:8;
+    column-gap:0px;
+  }
+  .dli{
+    width:100%;
+    border:1px dashed #31373e;
+    font-size: 0px;
+    display:inline-block;
+    margin-bottom:-1px;
+    padding:5px; box-sizing: border-box;
+    position: relative;
+    min-height:51px;
+  }
+    .dli div {font-size: 12px;}
+    .dli .storage{border:0px;padding:0px;}
+
+  .post .avatar {
+    height: 38px;
+    width: 38px;
+    background-size: cover!important;
+    margin-right: 5px;
+    border: 1px dashed #414850;
+  }
+  .post .w {
+    background: #414850;
+    color: #fff;
+    padding: 3px;
+    text-transform: uppercase;
+  }
+  .hex .post hr {
+    height: 15px;
+    margin-top: 15px;
+  }
+
+
+@media only screen and (max-width: 2400px) {
+    .window{width:2050px;} .container{column-count:6;}
+}
+@media only screen and (max-width: 2050px) {
+    .window{width:1500px;} .container{column-count:5;}
+}
+@media only screen and (max-width: 1500px) {
+    .window{width:1200px;} .container{column-count:4;}
+}
+@media only screen and (max-width: 1200px) {
+    .window{width:1050px;} .container{column-count:3;}
+}
+@media only screen and (max-width: 1050px) {
+    .window{width:800px;} .container{column-count:2;}
+}
+@media only screen and (max-width: 800px) {
+    .window{width:100%;} .container{column-count:1;}
+}
 
 
 
