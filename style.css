@@ -873,9 +873,9 @@ body.decker {
 }
 .decker .hex{
   background: transparent;
-  background-image: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 0);
-  background-size: 50px 50px;
-  background-position: 25px 25px;
+  background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 0);
+  background-size: 1vw 1vw;
+  background-position: 0.5vw 0.5vw;
   min-height: 100%;
 }
 
@@ -1003,14 +1003,14 @@ body.decker {
     column-gap:0px;
   }
   .dli{
-    width:100%;
+    width:20vw;
     border:1px dashed #31373e;
     font-size: 0px;
     display:inline-block;
-    margin-bottom:-1px;
+    margin: 1vw 0 0 1vw;
     padding:5px; box-sizing: border-box;
     position: relative;
-    min-height:51px;
+    min-height:3vw;
   }
     .dli div {font-size: 12px;}
     .dli .storage{border:0px;padding:0px;}
@@ -1032,26 +1032,6 @@ body.decker {
     height: 15px;
     margin-top: 15px;
   }
-
-
-@media only screen and (max-width: 2400px) {
-    .window{width:2050px;} .container{column-count:6;}
-}
-@media only screen and (max-width: 2050px) {
-    .window{width:1500px;} .container{column-count:5;}
-}
-@media only screen and (max-width: 1500px) {
-    .window{width:1200px;} .container{column-count:4;}
-}
-@media only screen and (max-width: 1200px) {
-    .window{width:1050px;} .container{column-count:3;}
-}
-@media only screen and (max-width: 1050px) {
-    .window{width:800px;} .container{column-count:2;}
-}
-@media only screen and (max-width: 800px) {
-    .window{width:100%;} .container{column-count:1;}
-}
 
 
 
