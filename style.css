@@ -998,17 +998,14 @@ body.decker {
   .window{
     width:2500px;
   }
-  .container{
-    column-count:8;
-    column-gap:0px;
-  }
+  .container{}
   .dli{
     width:20vw;
     border:1px dashed #31373e;
     font-size: 0px;
     display:inline-block;
     margin: 1vw 0 0 1vw;
-    padding:5px; box-sizing: border-box;
+    padding:0.2vw; box-sizing: border-box;
     position: relative;
     min-height:3vw;
   }
