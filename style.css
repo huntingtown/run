@@ -995,15 +995,12 @@ body.decker {
     background: linear-gradient(to right, rgba(0,0,0,1) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0) 100%);
   }
 
-  .window{
-    width:2500px;
-  }
   .container{}
   .dli{
     width:20vw;
     border:1px dashed #31373e;
     font-size: 0px;
-    display:inline-block;
+    display:block;
     margin: 1vw 0 0 1vw;
     padding:0.2vw; box-sizing: border-box;
     position: relative;
