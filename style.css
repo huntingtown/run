@@ -1005,6 +1005,7 @@ body.decker {
     padding:0.2vw; box-sizing: border-box;
     position: relative;
     min-height:3vw;
+    float:left;
   }
     .dli div {font-size: 12px;}
     .dli .storage{border:0px;padding:0px;}
